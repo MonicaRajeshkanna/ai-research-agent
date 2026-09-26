@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const DEFAULT_API_URL = "http://127.0.0.1:8000/research";
+const DEFAULT_API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000/research";
 
 type Source = {
   title?: string;
