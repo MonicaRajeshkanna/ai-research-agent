@@ -21,7 +21,25 @@ An AI agent that takes a research topic, searches the web, and generates a struc
 - **Web Search:** Tavily (free tier)
 
 ## Project structure
+
+````text
 ai-research-agent/
+````
+(add ` ```text ` on its own line right after the heading, with a blank line before it)
+
+Then find the end of the tree:
+````
+└── requirements.txt
+
+
+## Running locally
+````
+and add a closing fence right after `requirements.txt`:
+
+└── requirements.txt
+
+
+## Running locally
 ├── frontend/ # React frontend
 ├── src/
 │ ├── agent.py # LangChain/LangGraph research agent
