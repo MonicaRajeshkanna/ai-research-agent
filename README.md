@@ -22,34 +22,18 @@ An AI agent that takes a research topic, searches the web, and generates a struc
 
 ## Project structure
 
-````text
+```text
 ai-research-agent/
-````
-(add ` ```text ` on its own line right after the heading, with a blank line before it)
-
-Then find the end of the tree:
-````
-└── requirements.txt
-
-
-## Running locally
-````
-and add a closing fence right after `requirements.txt`:
-
-└── requirements.txt
-
-
-## Running locally
-├── frontend/ # React frontend
+├── frontend/              # React frontend
 ├── src/
-│ ├── agent.py # LangChain/LangGraph research agent
-│ ├── tools.py # Web search tool + source collection/cleaning
-│ ├── prompts.py # Prompt templates
-│ └── report_generator.py # Structured report generation
-├── tests/ # Test scripts for each component
-├── main.py # FastAPI backend entrypoint
+│   ├── agent.py           # LangChain/LangGraph research agent
+│   ├── tools.py           # Web search tool + source collection/cleaning
+│   ├── prompts.py         # Prompt templates
+│   └── report_generator.py # Structured report generation
+├── tests/                 # Test scripts for each component
+├── main.py                # FastAPI backend entrypoint
 └── requirements.txt
-
+```
 
 ## Running locally
 
