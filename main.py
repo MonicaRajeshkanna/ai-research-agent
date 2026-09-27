@@ -15,7 +15,10 @@ app = FastAPI(title="AI Research Agent API")
 # request by default as a security measure.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # for now, allow any origin — we'll tighten this on Day 6 for deployment
+    allow_origins=[
+        "https://ai-research-agent-gamma-nine.vercel.app",
+        "http://localhost:8080",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
